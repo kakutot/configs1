@@ -1,4 +1,5 @@
 zuul.prefix: "/api"	
+strip-prefix: true 
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5500
 ribbon:
   ConnectTimeout: 5500
