@@ -1,6 +1,7 @@
 zuul:
   prefix: /api
   strip-prefix: false 
+  sensitiveHeaders: Cookie,Set-Cookie	
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5500
 ribbon:
   ConnectTimeout: 5500
