@@ -1,6 +1,9 @@
-server.port: 8555
+server.port: 5555
 zuul.prefix: /api	
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5500
 ribbon:
   ConnectTimeout: 5500
   ReadTimeout: 5500
+management.endpoints.web.exposure.include=*
+management.endpoint.routes.enabled=true
+management.endpoint.filters.enabled=true
