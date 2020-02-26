@@ -1,6 +1,6 @@
 server.port: 8555
 zuul.prefix: /api	
-hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 3500
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5500
 ribbon:
-  ConnectTimeout: 3500
-  ReadTimeout: 3500
+  ConnectTimeout: 5500
+  ReadTimeout: 5500
