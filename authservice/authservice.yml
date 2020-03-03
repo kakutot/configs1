@@ -1,1 +1,23 @@
-jwt.signing.key: 123
+spring:
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+  datasource:
+    initialization-mode: always
+    url: jdbc:mysql://localhost:3306/mydb
+    username: root
+    password: {cipher}177e63c7db1f676d561647e415147a0648e39838d5bb4dd12ed87842405dc385
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #security:
+    # oauth2:
+    #  resource:
+    #   filter-order: 3
+jwt:
+  key-store: jwt.jks
+  key-store-password: {cipher}7907be7b45b988bc67caa71c7a2580763c2b0129429aa6c4e849b3f67cc55882
+  key-pair-alias: jwtpair
+  key-pair-password: {cipher}7907be7b45b988bc67caa71c7a2580763c2b0129429aa6c4e849b3f67cc55882
+
