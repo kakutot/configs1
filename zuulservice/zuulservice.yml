@@ -1,12 +1,3 @@
-zuul:
-  prefix: /api
-  strip-prefix: false 
-  sensitiveHeaders: Cookie,Set-Cookie	
-security:
-  oauth2:
-    resource:
-      jwt:
-        key-value: 123
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5500
 ribbon:
   ConnectTimeout: 5500
