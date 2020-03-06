@@ -7,7 +7,7 @@ spring:
     show-sql: "true"
   datasource:
     initialization-mode: "always"
-    url: "jdbc:mysql://localhost:3308/mydb"
+    url: "jdbc:mysql://localhost:3306/mydb"
     username: "root"
     password: "{cipher}177e63c7db1f676d561647e415147a0648e39838d5bb4dd12ed87842405dc385"
     driver-class-name: "com.mysql.cj.jdbc.Driver"
