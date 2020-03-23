@@ -22,7 +22,7 @@ spring:
         database-name: "authdb"
         instance-connection-name: "peak-equator-268708:us-central1:authdb"
         credentials:
-          location: "peak-equator-268708-20a375ebc5e3.json"
+          location: "peak-equator-268708-5db219001466.json"
     project-id: "peak-equator-268708"     
 jwt:
   key-store: "jwt.jks"
