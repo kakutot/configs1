@@ -8,7 +8,7 @@ spring:
   datasource:
     initialization-mode: "always"
     continue-on-error: "true"
-    url: "jdbc:mysql:///authdb?cloudSqlInstance=peak-equator-268708:us-central1:authdb&socketFactory=com.google.cloud.sql.mysql.SocketFactory&user=root&password=rootpassword
+    url: "jdbc:mysql://authdb?cloudSqlInstance=peak-equator-268708:us-central1:authdb&socketFactory=com.google.cloud.sql.mysql.SocketFactory&user=root&password=rootpassword
 "
     username: "root"
     password: "{cipher}177e63c7db1f676d561647e415147a0648e39838d5bb4dd12ed87842405dc385"
