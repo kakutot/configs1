@@ -3,27 +3,27 @@ spring:
     open-in-view: "false"
     hibernate:
       ddl-auto: "update"
-    #database-platform: "org.hibernate.dialect.MySQL5Dialect"
+    database-platform: "org.hibernate.dialect.MySQL5Dialect"
     show-sql: "true"
   datasource:
     initialization-mode: "always"
     continue-on-error: "true"
-    #url: "jdbc:mysql://23.251.144.34:3306/authdb"
+    url: "jdbc:mysql://10.49.48.3:3306/authdb"
     username: "root"
     password: "{cipher}177e63c7db1f676d561647e415147a0648e39838d5bb4dd12ed87842405dc385"
-    #driver-class-name: "com.mysql.cj.jdbc.Driver"
+    driver-class-name: "com.mysql.cj.jdbc.Driver"
     #security:
     # oauth2:
     #  resource:
     #   filter-order: 3
-  cloud:
-    gcp:
-      sql:
-        database-name: "authdb"
-        instance-connection-name: "peak-equator-268708:us-central1:authdb"
-        credentials:
-          location: "/home/r_tupkalenko2012/peak-equator-268708-22f813c0ddc6.json"
-    project-id: "peak-equator-268708"     
+  #cloud:
+    #gcp:
+      #sql:
+        #database-name: "authdb"
+        #instance-connection-name: "peak-equator-268708:us-central1:authdb"
+        #credentials:
+          #location: "/home/r_tupkalenko2012/peak-equator-268708-22f813c0ddc6.json"
+    #project-id: "peak-equator-268708"     
 jwt:
   key-store: "jwt.jks"
   key-store-password: "{cipher}7907be7b45b988bc67caa71c7a2580763c2b0129429aa6c4e849b3f67cc55882"
