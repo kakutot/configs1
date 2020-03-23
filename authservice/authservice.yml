@@ -8,8 +8,7 @@ spring:
   datasource:
     initialization-mode: "always"
     continue-on-error: "true"
-    url: "jdbc:mysql://authdb?cloudSqlInstance=peak-equator-268708:us-central1:authdb&socketFactory=com.google.cloud.sql.mysql.SocketFactory&user=root&password=rootpassword
-"
+   # url: "jdbc:mysql://authdb?cloudSqlInstance=peak-equator-268708:us-central1:authdb&socketFactory=com.google.cloud.sql.mysql.SocketFactory&user=root&password=rootpassword"
     username: "root"
     password: "{cipher}177e63c7db1f676d561647e415147a0648e39838d5bb4dd12ed87842405dc385"
     driver-class-name: "com.mysql.cj.jdbc.Driver"
@@ -19,11 +18,12 @@ spring:
     #   filter-order: 3
   cloud:
     gcp:
+      enabled: "true"
       sql:
         database-name: "authdb"
         instance-connection-name: "peak-equator-268708:us-central1:authdb"
-        credentials:
-          location: "file:/home/r_tupkalenko2012/peak-equator-268708-31edf6e0707e.json"
+        #credentials:
+          #location: "file:/home/r_tupkalenko2012/peak-equator-268708-31edf6e0707e.json" 
     project-id: "peak-equator-268708"     
 jwt:
   key-store: "jwt.jks"
