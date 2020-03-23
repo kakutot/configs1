@@ -3,7 +3,7 @@ spring:
     open-in-view: "false"
     hibernate:
       ddl-auto: "update"
-    database-platform: "org.hibernate.dialect.MySQL5Dialect"
+    database-platform: "org.hibernate.dialect.MySQL5InnoDBDialect"
     show-sql: "true"
   datasource:
     initialization-mode: "always"
