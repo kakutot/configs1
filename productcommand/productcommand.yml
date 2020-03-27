@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: "productcommand"
+server:
+  port: 8888
+
+spring:
+  cloud:
+    gcp:
+	  spanner:
+	    instance-id: "test"
+        database: "products"
+        project-id: "peak-equator-268708"
+  elasticsearch:
+    rest:
+	  uris: "http://35.225.25.38:9200"
+	  connection-timeout: "5s"
+eureka:
+  client:
+    serviceUrl:
+	  defaultZone: "http://23.251.144.246:8777/eureka/"
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+
+#Elasticsearch Database
+
+elasticsearch:
+  host: 35.225.25.38 
+  port: 9300
+  clustername: docker-cluster
+
+
+#This is properties for Kafka and Schema registry Avro
+kafka:
+  broker:
+    host: 35.233.234.77
+    port: 9092
+  schemaRegistry:
+    host: 35.233.234.77
+    port: 8081
